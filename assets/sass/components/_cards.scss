@@ -1,6 +1,29 @@
 
+.modalBackground {
+    background: linear-gradient(to bottom, $color-secundario, $color-primario);
+}
 
+.centerButton {
+    padding:auto;
+    margin: auto;
+    text-align: center;
+}
 
+.botonModal {
+    font-size: $fs-s;
+    color: $color-white;
+    padding: 1rem 0rem;
+}
 
+.tituloModal {
+    font-size: $fs-l;
+    color: $color-white;
+    text-align: center;
+    margin: 10% auto 5%;
+}
 
+.modalWidth {
+    width: 60%;
+    margin: auto;
+}
 

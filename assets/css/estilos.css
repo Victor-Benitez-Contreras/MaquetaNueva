@@ -9915,29 +9915,107 @@ body {
  */
 .header {
   background-image: url("../img/header-internet.png");
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
-  background-position: top;
-  height: 840px;
+  background-position: center;
+  height: 820px;
+  width: 100%;
 }
 
-@media (max-width: 576px) {
+.center {
+  text-align: center;
+}
+
+.tituloHeader-01 {
+  font-size: 72px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 8rem;
+}
+
+.tituloHeader-02 {
+  font-size: 72px;
+  font-weight: 500;
+  color: #e75555;
+  text-align: center;
+}
+
+.textoHeader {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  max-width: 460px;
+  margin: auto;
+  padding: 5rem 0rem;
+}
+
+.textoHeader span {
+  font-weight: 500;
+  color: #7afffa;
+}
+
+@media (max-width: 960px) {
   .header {
     background-image: url("../img/header-internet.png");
-    background-size: contain;
+    background-size: auto;
     background-repeat: no-repeat;
-    background-position: top;
-    width: 140%;
-    height: 840px;
+    background-position: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .tituloHeader-01 {
+    font-size: 38px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 9rem;
+  }
+
+  .tituloHeader-02 {
+    font-size: 38px;
+    font-weight: 500;
+    color: #e75555;
+    text-align: center;
+  }
+
+  .textoHeader {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    padding: 5rem 0rem 8rem;
   }
 }
 .footer {
   background-color: #e75555;
   height: 120px;
-  margin: -20px 0px 0px 0px;
+  margin: -40px 0px 0px 0px;
+}
+
+.copyFooter {
+  color: #bbb;
+  font-size: 17px;
+  font-weight: 400;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.contenedor__copyfooter {
+  text-align: center;
 }
 
 /* Botones con borde */
+.boton__simple {
+  background: transparent;
+  border: 2px transparent;
+}
+
 .botonPequeño__bordePrimario {
   font-size: 17px;
   font-weight: 400;
@@ -10065,6 +10143,34 @@ body {
   background-color: #55b3af;
   border: 2px solid #55b3af;
   color: #e75555;
+}
+
+.modalBackground {
+  background: linear-gradient(to bottom, #7afffa, #e75555);
+}
+
+.centerButton {
+  padding: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.botonModal {
+  font-size: 17px;
+  color: #fff;
+  padding: 1rem 0rem;
+}
+
+.tituloModal {
+  font-size: 38px;
+  color: #fff;
+  text-align: center;
+  margin: 10% auto 5%;
+}
+
+.modalWidth {
+  width: 60%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=estilos.css.map */

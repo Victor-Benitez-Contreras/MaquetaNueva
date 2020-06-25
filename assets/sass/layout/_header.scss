@@ -10,25 +10,84 @@
 
 .header {
     background-image: url("../img/header-internet.png");
-    background-size: contain;
+    background-size: auto;
     background-repeat: no-repeat;
-    background-position: top;
-    height: 840px;
+    background-position: center;
+    height: 820px;
+    width: 100%;
 }
 
-.tituloHeader {
+.center {
+    text-align: center;
+}
+
+
+.tituloHeader-01 {
     font-size: $fs-xl;
+    font-weight: $medium;
+    color: $color-white;
+    text-align: center;
+    margin-bottom: 0px;;
+    margin-top: 8rem;
 }
 
-@media (max-width: 720px) {
+.tituloHeader-02 {
+    font-size: $fs-xl;
+    font-weight: $medium;
+    color: $color-primario;
+    text-align: center;
+}
+
+.textoHeader{
+    font-size: $fs-m;
+    color: $color-white;
+    font-weight: $regular;
+    text-align: center;
+    max-width: 460px;
+    margin: auto;
+    padding: 5rem 0rem;
+}
+
+.textoHeader span {
+    font-weight: $medium;
+    color: $color-secundario;
+}
+
+@media (max-width: 960px) {
 
     .header {
         background-image: url("../img/header-internet.png");
-        background-size: contain;
+        background-size: auto;
         background-repeat: no-repeat;
-        background-position: top;
-        width: 140%;
-        height: 50%;
+        background-position: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    .tituloHeader-01 {
+        font-size: $fs-l;
+        font-weight: $medium;
+        color: $color-white;
+        text-align: center;
+        margin-bottom: 0px;;
+        margin-top: 9rem;
+
+    }
+    
+    .tituloHeader-02 {
+        font-size: $fs-l;
+        font-weight: $medium;
+        color: $color-primario;
+        text-align: center;
     }
 
+    .textoHeader{
+        font-size: $fs-s;
+        color: $color-white;
+        font-weight: $regular;
+        text-align: center;
+        margin: auto;
+        padding: 5rem 0rem 8rem;
+    }
+    
 }

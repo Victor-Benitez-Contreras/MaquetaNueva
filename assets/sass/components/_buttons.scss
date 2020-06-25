@@ -1,6 +1,11 @@
 
 /* Botones con borde */
 
+.boton__simple{
+    background: transparent;
+    border: 2px transparent;
+}
+
 .botonPequeño__bordePrimario {
     font-size: $fs-s;
     font-weight: $regular;
@@ -114,5 +119,8 @@
         @include boton-rellenoSecundario-hover();
     }
 }
+
+
+
 
 
