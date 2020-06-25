@@ -1,0 +1,118 @@
+
+/* Botones con borde */
+
+.botonPequeño__bordePrimario {
+    font-size: $fs-s;
+    font-weight: $regular;
+
+    @include boton-pequeño();
+
+    @include boton-bordePrimario();
+
+    &:hover {
+        @include boton-bordePrimario-hover();
+    }
+}
+
+.botonPequeño__bordeSecundario {
+
+    font-size: $fs-s;
+    font-weight: $regular;
+
+    @include boton-pequeño();
+
+    @include boton-bordeSecundario();
+
+    &:hover {
+        @include boton-bordeSecundario-hover();
+    }
+}
+
+.botonMediano__bordePrimario {
+
+    font-size: $fs-s;
+    font-weight: $regular;
+
+    @include boton-mediano();
+
+    @include boton-bordePrimario();
+
+    &:hover {
+        @include boton-bordePrimario-hover();
+    }
+}
+
+.botonMediano__bordeSecundario {
+
+    font-size: $fs-s;
+    font-weight: $regular;
+
+    @include boton-mediano();
+
+    @include boton-bordeSecundario();
+
+    &:hover {
+        @include boton-bordeSecundario-hover();
+    }
+}
+
+
+/* Botones con Relleno */
+
+
+.botonPequeño__rellenoPrimario {
+    font-size: $fs-s;
+    font-weight: $regular;
+
+    @include boton-pequeño();
+
+    @include boton-rellenoPrimario();
+
+    &:hover {
+        @include boton-rellenoPrimario-hover();
+    }
+}
+
+.botonPequeño__rellenoSecundario {
+
+    font-size: $fs-s;
+    font-weight: $regular;
+
+    @include boton-pequeño();
+
+    @include boton-rellenoSecundario();
+
+    &:hover {
+        @include boton-rellenoSecundario-hover();
+    }
+}
+
+.botonMediano__rellenoPrimario {
+
+    font-size: $fs-s;
+    font-weight: $regular;
+
+    @include boton-mediano();
+
+    @include boton-rellenoPrimario();
+
+    &:hover {
+        @include boton-rellenoPrimario-hover();
+    }
+}
+
+.botonMediano__rellenoSecundario {
+
+    font-size: $fs-s;
+    font-weight: $regular;
+
+    @include boton-mediano();
+
+    @include boton-rellenoSecundario();
+
+    &:hover {
+        @include boton-rellenoSecundario-hover();
+    }
+}
+
+

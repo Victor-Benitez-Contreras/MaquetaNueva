@@ -1,0 +1,18 @@
+.bg-corporativo {
+    background-color: $color-primario;
+}
+
+
+.logo-nav{
+    width: 130px;
+    height: 72px;
+}
+
+.nav-item {
+    color: $color-white;
+    font-weight: $medium;
+    font-size: $fs-s;
+    &:hover {
+        color: $color-secundario;
+    }
+}
