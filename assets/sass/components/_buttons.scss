@@ -6,6 +6,11 @@
     border: 2px transparent;
 }
 
+.botonUsuario {
+    @include boton-pequeño();
+    color: $color-secundario;
+}
+
 .botonPequeño__bordePrimario {
     font-size: $fs-s;
     font-weight: $regular;

@@ -9908,10 +9908,11 @@ body {
 
 .header {
   background-image: url("../img/header-internet.png");
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100%;
+  height: 820px;
+  width: 100%;
 }
 
 .center {
@@ -9941,7 +9942,7 @@ body {
   text-align: center;
   max-width: 460px;
   margin: auto;
-  padding: 5rem 0rem 1rem;
+  padding: 5rem 0rem;
 }
 
 .textoHeader span {
@@ -9949,18 +9950,10 @@ body {
   color: #7afffa;
 }
 
-.lineaTitulo {
-  text-align: center;
-  border-bottom: 4px solid #7afffa;
-  margin: auto;
-  margin-bottom: 14rem;
-  width: 200px;
-}
-
-@media (max-width: 990px) {
+@media (max-width: 960px) {
   .header {
     background-image: url("../img/header-internet.png");
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -9989,23 +9982,13 @@ body {
     font-weight: 400;
     text-align: center;
     margin: auto;
-    padding: 5rem 0rem 1rem;
-  }
-
-  .lineaTitulo {
-    text-align: center;
-    border-bottom: 4px solid #7afffa;
-    margin: auto;
-    margin-bottom: 11rem;
-    width: 200px;
+    padding: 5rem 0rem 8rem;
   }
 }
 .footer {
   background-color: #e75555;
   height: 120px;
-  margin: 0px 0px 0px 0px;
-  position: relative;
-  width: 100%;
+  margin: -40px 0px 0px 0px;
 }
 
 .copyFooter {
@@ -10022,7 +10005,16 @@ body {
 
 .seccion__top {
   background-image: url("../img/Top-01.png");
-  background-size: cover;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  width: 100%;
+}
+
+.seccion__top {
+  background-image: url("../img/Top-01.png");
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
   height: 250px;
@@ -10037,80 +10029,14 @@ body {
   font-weight: 500;
 }
 
-/* seccion registro  */
 .contenedor__formulario {
-  max-width: 500px;
+  max-width: 600px;
 }
 
-/* seccion perfil de usuario */
-.seccion__topPerfil {
-  /*     background-image: url("../img/Top-02.png");
-      background-size: auto;
-      background-repeat: no-repeat;
-      background-position: center; */
-  background: linear-gradient(to bottom, #7afffa, #e75555);
-  /*  background-color: $color-secundario; */
-  height: 480px;
-  width: 100%;
-}
-
-.seccion__perfil {
-  height: 19.5rem;
-  background: #fff;
-}
-
-.cajaFunciones {
-  background-color: #e75555;
-  width: 100%;
-  height: 25rem;
-  margin: 2rem 0rem;
-  transition-property: box-shadow, border-radius;
-  transition-duration: 0.3s;
-}
-.cajaFunciones:hover {
-  box-shadow: inset 0px 0px 25px 5px #7afffa;
-  border-radius: 1rem;
-}
-
-.cajaImagen__cajaFunciones {
-  text-align: center;
-  padding: 2rem;
-}
-
-.cajaBotones__cajaFunciones {
-  text-align: center;
-  padding: 2rem;
-}
-
-.titulo__cajaFunciones {
-  text-align: center;
-  color: #fff;
-  font-size: 38px;
-  font-weight: 500;
-}
-
-@media (max-width: 760px) {
-  .seccion__topPerfil {
-    /*  background-image: url("../img/Top-02.png");
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center; */
-    background: linear-gradient(to bottom, #7afffa, #e75555);
-    height: 1420px;
-    width: 100%;
-  }
-}
 /* Botones con borde */
 .boton__simple {
   background: transparent;
   border: 2px transparent;
-}
-
-.botonUsuario {
-  width: 135px;
-  height: 33px;
-  border-radius: 16.5px;
-  color: #7afffa;
 }
 
 .botonPequeño__bordePrimario {
@@ -10142,7 +10068,7 @@ body {
 .botonPequeño__bordeSecundario:hover {
   background-color: #7afffa;
   border: 2px solid #7afffa;
-  color: #e75555;
+  color: #fff;
 }
 
 .botonMediano__bordePrimario {
@@ -10174,7 +10100,7 @@ body {
 .botonMediano__bordeSecundario:hover {
   background-color: #7afffa;
   border: 2px solid #7afffa;
-  color: #e75555;
+  color: #fff;
 }
 
 /* Botones con Relleno */
@@ -10267,11 +10193,10 @@ body {
 }
 
 .modalWidth {
-  max-width: 300px;
+  width: 60%;
   margin: auto;
 }
 
 /* Modal Precios */
-/* cards del perfil */
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=etilos.css.map */

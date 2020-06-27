@@ -15,12 +15,14 @@
   border-radius: 16.5px;
 }
 
+
+
 /* sin background */
 
- @mixin boton-bordePrimario() {    
-    background-color: transparent;
-    border: 2px solid $color-primario;
-    color: $color-primario;
+@mixin boton-bordePrimario() {    
+  background-color: transparent;
+  border: 2px solid $color-primario;
+  color: $color-primario;
 }
 
 @mixin boton-bordePrimario-hover() {    
@@ -39,7 +41,7 @@
 @mixin boton-bordeSecundario-hover() {    
 background-color: $color-secundario;
 border: 2px solid $color-secundario;
-color: $color-white;
+color: $color-primario;
 }
 
 /* con background */
@@ -66,4 +68,12 @@ color: $color-white;
   background-color: $color-secundario-hover;
   border: 2px solid $color-secundario-hover;
   color: $color-primario;
+}
+
+/* Secciones */ 
+
+@mixin titulo-secciones() {    
+  color: $color-white;
+  font-size: $fs-xl;
+  font-weight: $medium;
 }

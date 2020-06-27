@@ -1,4 +1,6 @@
 
+/* Modal Registro */
+
 .modalBackground {
     background: linear-gradient(to bottom, $color-secundario, $color-primario);
 }
@@ -23,7 +25,13 @@
 }
 
 .modalWidth {
-    width: 60%;
+    max-width: 300px;
     margin: auto;
 }
+
+/* Modal Precios */
+
+
+
+/* cards del perfil */
 
