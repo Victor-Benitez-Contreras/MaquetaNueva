@@ -14,6 +14,8 @@
 .botonPequeño__bordePrimario {
     font-size: $fs-s;
     font-weight: $regular;
+    transition-property: background-color;
+    transition-duration: 0.4s;
 
     @include boton-pequeño();
 
@@ -28,6 +30,8 @@
 
     font-size: $fs-s;
     font-weight: $regular;
+    transition-property: background-color;
+    transition-duration: 0.4s;
 
     @include boton-pequeño();
 
@@ -42,6 +46,8 @@
 
     font-size: $fs-s;
     font-weight: $regular;
+    transition-property: background-color;
+    transition-duration: 0.4s;
 
     @include boton-mediano();
 
@@ -56,6 +62,8 @@
 
     font-size: $fs-s;
     font-weight: $regular;
+    transition-property: background-color;
+    transition-duration: 0.4s;
 
     @include boton-mediano();
 
@@ -73,6 +81,8 @@
 .botonPequeño__rellenoPrimario {
     font-size: $fs-s;
     font-weight: $regular;
+    transition-property: background-color;
+    transition-duration: 0.4s;
 
     @include boton-pequeño();
 
@@ -87,6 +97,8 @@
 
     font-size: $fs-s;
     font-weight: $regular;
+    transition-property: background-color;
+    transition-duration: 0.4s;
 
     @include boton-pequeño();
 
@@ -98,9 +110,10 @@
 }
 
 .botonMediano__rellenoPrimario {
-
     font-size: $fs-s;
     font-weight: $regular;
+    transition-property: background-color;
+    transition-duration: 0.4s;
 
     @include boton-mediano();
 
@@ -112,9 +125,10 @@
 }
 
 .botonMediano__rellenoSecundario {
-
     font-size: $fs-s;
     font-weight: $regular;
+    transition-property: background-color;
+    transition-duration: 0.4s;
 
     @include boton-mediano();
 
@@ -125,6 +139,21 @@
     }
 }
 
+/* botones especiales */
+
+.botonPequeño__rellenoSecundario a{
+    text-decoration: none;
+    color: $color-primario;
+}
+
+.botonPequeño__bordeSecundario a{
+    padding: 8px 15px;
+    text-decoration: none;
+    color: $color-secundario; 
+    &:hover{
+        color: $color-primario;
+    }
+}
 
 
 

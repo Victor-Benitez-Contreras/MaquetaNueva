@@ -10020,6 +10020,18 @@ body {
   text-align: center;
 }
 
+.contenedor__formulario {
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  max-width: 550px;
+}
+
+.contenedor__boton {
+  text-align: center;
+  margin-top: 3rem;
+}
+
 .seccion__top {
   background-image: url("../img/Top-01.png");
   background-size: cover;
@@ -10042,20 +10054,17 @@ body {
   max-width: 500px;
 }
 
+/* ------ */
 /* seccion perfil de usuario */
+/* -----  */
 .seccion__topPerfil {
-  /*     background-image: url("../img/Top-02.png");
-      background-size: auto;
-      background-repeat: no-repeat;
-      background-position: center; */
   background: linear-gradient(to bottom, #7afffa, #e75555);
-  /*  background-color: $color-secundario; */
   height: 480px;
   width: 100%;
 }
 
 .seccion__perfil {
-  height: 19.5rem;
+  height: 24.5rem;
   background: #fff;
 }
 
@@ -10089,15 +10098,123 @@ body {
   font-weight: 500;
 }
 
-@media (max-width: 760px) {
+.cajaDescrip {
+  margin: 2.5rem auto 1rem;
+}
+
+.titulo__cajaDescrip {
+  font-weight: 500;
+  font-size: 30px;
+  color: #e75555;
+  text-align: left;
+}
+
+.texto__cajaDescrip {
+  font-weight: 300;
+  font-size: 17px;
+  color: #e75555;
+}
+
+.texto__cajaDescrip strong {
+  font-weight: 400;
+}
+
+/* -----
+seccion historial de usuario
+----- */
+.Historial {
+  margin: 1rem 0rem;
+}
+
+.cajaHistorial {
+  background-color: #e75555;
+  width: 100%;
+  height: 15rem;
+  margin: 1rem 0rem;
+  transition-property: box-shadow, border-radius;
+  transition-duration: 0.4s;
+}
+.cajaHistorial:hover {
+  box-shadow: inset 0px 0px 25px 5px #7afffa;
+  border-radius: 1.5rem;
+}
+
+.caja__tituloHistorial {
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+.titulo__cajaHistorial {
+  color: #fff;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.info__cajaHistorial {
+  color: #7afffa;
+  font-size: 17px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.parametroInfo__cajaHistorial {
+  font-weight: 300;
+  text-align: right;
+  padding-right: 8px;
+}
+
+.valorInfo__cajaHistorial {
+  font-weight: 500;
+  text-align: left;
+  padding-left: 8px;
+}
+
+.cajaBotones__cajaHistorial {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.cajaPremium {
+  text-align: center;
+  margin: auto;
+}
+
+.texto__premium {
+  margin: 0px auto;
+  text-align: center;
+  padding-bottom: -5px;
+  color: #e75555;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.boton__premium {
+  font-weight: 500;
+  text-align: center;
+  margin: 0px auto 10px;
+}
+
+/* ----
+inicio media queries
+-----  */
+@media (max-width: 990px) {
   .seccion__topPerfil {
-    /*  background-image: url("../img/Top-02.png");
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center; */
     background: linear-gradient(to bottom, #7afffa, #e75555);
     height: 1420px;
     width: 100%;
+  }
+
+  .seccion__titulo {
+    padding-top: 8.5rem;
+    text-align: center;
+    color: #fff;
+    font-size: 38px;
+    font-weight: 500;
+  }
+
+  .seccion__perfil {
+    height: 50rem;
+    background: #fff;
   }
 }
 /* Botones con borde */
@@ -10116,6 +10233,8 @@ body {
 .botonPequeño__bordePrimario {
   font-size: 17px;
   font-weight: 400;
+  transition-property: background-color;
+  transition-duration: 0.4s;
   width: 135px;
   height: 33px;
   border-radius: 16.5px;
@@ -10132,6 +10251,8 @@ body {
 .botonPequeño__bordeSecundario {
   font-size: 17px;
   font-weight: 400;
+  transition-property: background-color;
+  transition-duration: 0.4s;
   width: 135px;
   height: 33px;
   border-radius: 16.5px;
@@ -10148,6 +10269,8 @@ body {
 .botonMediano__bordePrimario {
   font-size: 17px;
   font-weight: 400;
+  transition-property: background-color;
+  transition-duration: 0.4s;
   width: 200px;
   height: 33px;
   border-radius: 16.5px;
@@ -10164,6 +10287,8 @@ body {
 .botonMediano__bordeSecundario {
   font-size: 17px;
   font-weight: 400;
+  transition-property: background-color;
+  transition-duration: 0.4s;
   width: 200px;
   height: 33px;
   border-radius: 16.5px;
@@ -10181,6 +10306,8 @@ body {
 .botonPequeño__rellenoPrimario {
   font-size: 17px;
   font-weight: 400;
+  transition-property: background-color;
+  transition-duration: 0.4s;
   width: 135px;
   height: 33px;
   border-radius: 16.5px;
@@ -10197,6 +10324,8 @@ body {
 .botonPequeño__rellenoSecundario {
   font-size: 17px;
   font-weight: 400;
+  transition-property: background-color;
+  transition-duration: 0.4s;
   width: 135px;
   height: 33px;
   border-radius: 16.5px;
@@ -10213,6 +10342,8 @@ body {
 .botonMediano__rellenoPrimario {
   font-size: 17px;
   font-weight: 400;
+  transition-property: background-color;
+  transition-duration: 0.4s;
   width: 200px;
   height: 33px;
   border-radius: 16.5px;
@@ -10229,6 +10360,8 @@ body {
 .botonMediano__rellenoSecundario {
   font-size: 17px;
   font-weight: 400;
+  transition-property: background-color;
+  transition-duration: 0.4s;
   width: 200px;
   height: 33px;
   border-radius: 16.5px;
@@ -10242,6 +10375,21 @@ body {
   color: #e75555;
 }
 
+/* botones especiales */
+.botonPequeño__rellenoSecundario a {
+  text-decoration: none;
+  color: #e75555;
+}
+
+.botonPequeño__bordeSecundario a {
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #7afffa;
+}
+.botonPequeño__bordeSecundario a:hover {
+  color: #e75555;
+}
+
 /* Modal Registro */
 .modalBackground {
   background: linear-gradient(to bottom, #7afffa, #e75555);
@@ -10251,6 +10399,11 @@ body {
   padding: auto;
   margin: auto;
   text-align: center;
+}
+
+.centerButton a {
+  text-decoration: none;
+  color: #e75555;
 }
 
 .botonModal {

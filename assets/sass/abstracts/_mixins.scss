@@ -77,3 +77,9 @@ color: $color-primario;
   font-size: $fs-xl;
   font-weight: $medium;
 }
+
+@mixin titulo-secciones-responsive() {    
+  color: $color-white;
+  font-size: $fs-l;
+  font-weight: $medium;
+}

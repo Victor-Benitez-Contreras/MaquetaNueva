@@ -1,4 +1,3 @@
-
 .seccion__top{
     background-image: url("../img/Top-01.png");
     background-size: cover;
@@ -20,24 +19,21 @@
     max-width: 500px;
 }
 
+
+/* ------ */
 /* seccion perfil de usuario */
+/* -----  */
 
 .seccion__topPerfil{
-/*     background-image: url("../img/Top-02.png");
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center; */
     background: linear-gradient(to bottom, $color-secundario, $color-primario); 
-  /*  background-color: $color-secundario; */
     height: 480px;
     width: 100%;
 }
-
 .seccion__perfil {
-    height: 19.5rem;
+    height: 24.5rem;
     background: $color-white;
-
 }
+
 
 .cajaFunciones {
     background-color: $color-primario;
@@ -46,24 +42,19 @@
     margin: 2rem 0rem;
     transition-property: box-shadow, border-radius;
     transition-duration: 0.3s;
-
-    &:hover{
+     &:hover{
         box-shadow: inset 0px 0px 25px 5px $color-secundario;
         border-radius: 1rem;
     }
-    
 }
-
 .cajaImagen__cajaFunciones{
     text-align: center;
     padding: 2rem;
 }
-
 .cajaBotones__cajaFunciones{
     text-align: center;
     padding: 2rem;
 }
-
 .titulo__cajaFunciones {
     text-align: center;
     color: $color-white;
@@ -72,14 +63,122 @@
 }
 
 
-@media (max-width: 760px) {
+.cajaDescrip{
+    margin: 2.5rem auto 1rem;
+}
+.titulo__cajaDescrip {
+    font-weight: $medium;
+    font-size: $fs-lm;
+    color: $color-primario;
+    text-align: left;
+}
+.texto__cajaDescrip {
+    font-weight: $light;
+    font-size: $fs-s;
+    color: $color-primario;
+}
+.texto__cajaDescrip strong{
+    font-weight: $regular;
+}
+
+
+/* -----
+seccion historial de usuario
+----- */
+
+.Historial {
+    margin: 1rem 0rem;
+}
+
+.cajaHistorial {
+    background-color: $color-primario;
+    width: 100%;
+    height: 15rem;
+    margin: 1rem 0rem;
+    transition-property: box-shadow, border-radius;
+    transition-duration: 0.4s;
+     &:hover{
+        box-shadow: inset 0px 0px 25px 5px $color-secundario;
+        border-radius: 1.5rem;
+    }
+}
+
+.caja__tituloHistorial {
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.titulo__cajaHistorial {
+    color: $color-white;
+    font-weight: $medium;
+    font-size: $fs-lm;
+}
+
+.info__cajaHistorial{
+    color: $color-secundario;
+    font-size: $fs-s;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.parametroInfo__cajaHistorial {
+    font-weight: $light;
+    text-align: right;
+    padding-right: 8px;
+}
+
+.valorInfo__cajaHistorial {
+    font-weight: $medium;
+    text-align: left;
+    padding-left: 8px;;
+}
+
+.cajaBotones__cajaHistorial {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+
+
+.cajaPremium{
+    text-align: center;
+    margin: auto;
+}
+.texto__premium{
+    margin:0px auto;
+    text-align: center;
+    padding-bottom: -5px;
+    color: $color-primario;
+    font-family: $font-f02;
+    font-weight: $regular;
+}
+.boton__premium{
+    font-weight: $medium;
+    text-align: center;
+    margin: 0px auto 10px;
+}
+
+
+/* ----
+inicio media queries
+-----  */
+
+@media (max-width: 990px) {
+
     .seccion__topPerfil{
-       /*  background-image: url("../img/Top-02.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; */
         background: linear-gradient(to bottom, $color-secundario, $color-primario);
         height: 1420px;
         width: 100%;
+    } 
+
+    .seccion__titulo{
+        padding-top: 8.5rem;
+        text-align: center;
+        @include titulo-secciones-responsive();
+    }
+
+    .seccion__perfil {
+        height: 50rem;
+        background: $color-white;
     }
 }
