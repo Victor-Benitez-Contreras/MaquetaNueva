@@ -55,6 +55,14 @@
     text-align: center;
     padding: 2rem;
 }
+.botonMediano__bordeSecundario a{
+    color: $color-secundario;
+    text-decoration: none;
+    padding: 8px 30px;
+    &:hover{
+        color: $color-primario;
+    }
+}
 .titulo__cajaFunciones {
     text-align: center;
     color: $color-white;
@@ -76,9 +84,10 @@
     font-weight: $light;
     font-size: $fs-s;
     color: $color-primario;
+    font-family: $font-f02;
 }
 .texto__cajaDescrip strong{
-    font-weight: $regular;
+    font-weight: $medium;
 }
 
 
@@ -114,43 +123,46 @@ seccion historial de usuario
     font-size: $fs-lm;
 }
 
-.info__cajaHistorial{
+
+/* Estilos componente cajaTorneo */
+
+.info__cajaTorneo{
     color: $color-secundario;
     font-size: $fs-s;
+    font-family: $font-f02;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
-
-.parametroInfo__cajaHistorial {
+.parametroInfo__cajaTorneo {
     font-weight: $light;
     text-align: right;
     padding-right: 8px;
 }
-
-.valorInfo__cajaHistorial {
+.valorInfo__cajaTorneo {
     font-weight: $medium;
     text-align: left;
     padding-left: 8px;;
 }
-
-.cajaBotones__cajaHistorial {
+.cajaBotones__cajaTorneo {
     text-align: center;
     margin: 1rem auto;
 }
 
-
+/* Estilos Boton Premium */
 
 .cajaPremium{
     text-align: center;
     margin: auto;
+    margin: 1rem;
 }
 .texto__premium{
     margin:0px auto;
     text-align: center;
-    padding-bottom: -5px;
+    padding-bottom: 0px;
     color: $color-primario;
     font-family: $font-f02;
     font-weight: $regular;
+    font-size: $fs-xs;
 }
 .boton__premium{
     font-weight: $medium;
@@ -159,11 +171,47 @@ seccion historial de usuario
 }
 
 
+/* ------ */
+/* seccion favoritos */
+/* -----  */
+
+
+.cajaFavoritos {
+    background-color: $color-primario;
+    width: 100%;
+    height: 25rem;
+    margin: 2rem 0rem 1rem;
+    transition-property: box-shadow, border-radius;
+    transition-duration: 0.4s;
+     &:hover{
+        box-shadow: inset 0px 0px 25px 5px $color-secundario;
+        border-radius: 1.5rem;
+    }
+}
+.cajaImagen__cajaFavoritos{
+    text-align: center;
+    padding: 2rem;
+}
+.cajaImagen__cajaFavoritos img{
+    width: 6rem;
+    height: 6rem;
+}
+
+
+
 /* ----
 inicio media queries
 -----  */
 
 @media (max-width: 990px) {
+    .seccion__top{
+        background-image: url("../img/Top-01.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 200px;
+        width: 100%;
+    }
 
     .seccion__topPerfil{
         background: linear-gradient(to bottom, $color-secundario, $color-primario);
@@ -172,7 +220,7 @@ inicio media queries
     } 
 
     .seccion__titulo{
-        padding-top: 8.5rem;
+        padding-top: 7.5rem;
         text-align: center;
         @include titulo-secciones-responsive();
     }
