@@ -234,8 +234,9 @@ Inicio seccion crear torneo
 }
 
 /* ----
-inicio Torneo Fixture
+--- Torneo Fixture ----/
 -----  */
+
 .torneo {
     background-color: $color-primario;
 }
@@ -251,6 +252,9 @@ inicio Torneo Fixture
     font-weight: $medium;
 }
 
+.caja__faseTorneo{
+    margin-bottom: 4rem;
+}
 .tituloFase__torneo{
     text-align: center;
     margin: auto;
@@ -258,7 +262,64 @@ inicio Torneo Fixture
     font-size: $fs-lm;
     font-weight: $medium;
     font-family: $font-f02;
+    margin-bottom: 2rem;
 }
+
+.caja__llaveTorneo {
+    margin-bottom: 3rem;
+}
+
+.llaveTorneo{
+    display: inline-block;
+    height: 48px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.equipoTorneo{
+    background-color: $color-white;
+    text-align: center;
+    border-radius: 0.2rem;
+    display: inline-block;
+    width: 65%;
+    height: 38px;
+}
+
+.nombreEquipo{
+    color: $color-primario;
+    font-family: $font-f02;
+    font-size: $fs-s;
+    font-weight: $medium;
+    margin: 5px auto;
+    vertical-align: middle;
+}
+
+.marcadorTorneo {
+    width: 60px;
+    height: 38px;
+    display: inline-block;
+    margin-left: 1rem;
+    border-radius: 0.2rem;
+    padding: 5px;
+}
+
+.caja__ganadorTorneo{
+    height: 48px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+.ganadorTorneo{
+    background-color: $color-white;
+    text-align: center;
+    border-radius: 0.2rem;
+    margin: auto;
+    width: 85%;
+    height: 38px;
+}
+
+
 
 /* ----
 inicio media queries

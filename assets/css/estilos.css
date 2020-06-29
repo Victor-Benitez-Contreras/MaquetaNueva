@@ -10274,7 +10274,7 @@ Inicio seccion crear torneo
 }
 
 /* ----
-inicio Torneo Fixture
+--- Torneo Fixture ----/
 -----  */
 .torneo {
   background-color: #e75555;
@@ -10292,6 +10292,10 @@ inicio Torneo Fixture
   font-weight: 500;
 }
 
+.caja__faseTorneo {
+  margin-bottom: 4rem;
+}
+
 .tituloFase__torneo {
   text-align: center;
   margin: auto;
@@ -10299,6 +10303,62 @@ inicio Torneo Fixture
   font-size: 30px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.caja__llaveTorneo {
+  margin-bottom: 3rem;
+}
+
+.llaveTorneo {
+  display: inline-block;
+  height: 48px;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+.equipoTorneo {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 0.2rem;
+  display: inline-block;
+  width: 65%;
+  height: 38px;
+}
+
+.nombreEquipo {
+  color: #e75555;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 5px auto;
+  vertical-align: middle;
+}
+
+.marcadorTorneo {
+  width: 60px;
+  height: 38px;
+  display: inline-block;
+  margin-left: 1rem;
+  border-radius: 0.2rem;
+  padding: 5px;
+}
+
+.caja__ganadorTorneo {
+  height: 48px;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+.ganadorTorneo {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 0.2rem;
+  margin: auto;
+  width: 85%;
+  height: 38px;
 }
 
 /* ----
