@@ -156,12 +156,39 @@
                 <div class="col-12">
                     <div class="cajaPremium">
                         <p class="texto__premium">Para tener historial y favoritos ilimitado</p>
-                        <button class="boton__premium botonMediano__rellenoPrimario">eLig Premium</button>
+                        <button class="boton__premium botonMediano__rellenoPrimario" data-toggle="modal" data-target="#premiumModal" data-whatever="@mdo"><strong>eLig</strong> Premium</button>
                     </div>
                 </div>
 
             </div>
         </div>
+
+<!---------- inicio modal comprar premium -->
+
+     <div class="modalPremium modal fade" id="premiumModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog">
+                <div class="modalBackground modal-content">
+                        <button type="button" class="close mt-3" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                        <h5 class="tituloModal" id="exampleModalLabel">Obtén Premium</h5>
+                        
+                        
+                        <div class="caja__modalPremium">
+                                <div class="divisa__modalPremium">CLP</div><div class="valorD__modalPremium">2.990</div>
+                                <div class="divisa__modalPremium">USD</div><div class="valorD__modalPremium">3,65</div>
+                                <div class="divisa__modalPremium">EUR</div><div class="valorD__modalPremium">3,25</div>
+                        </div>
+
+                        <div class="cajaBoton__modalPremium">
+                            <button type="button" class="botonPequeño__rellenoSecundario centerButton"><a href="comprar.html">Adquirir</a></button>
+                        </div>   
+                </div>
+            </div>
+
+    </div>
+
+
     </section>
 
 <!-- Inicio footer -->

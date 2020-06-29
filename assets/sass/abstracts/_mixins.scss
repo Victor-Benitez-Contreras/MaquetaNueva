@@ -83,3 +83,8 @@ color: $color-primario;
   font-size: $fs-l;
   font-weight: $medium;
 }
+
+@mixin hover-caja {
+  box-shadow: inset 0px 0px 35px 10px $color-secundario;
+  border-radius: 0.3rem;
+}

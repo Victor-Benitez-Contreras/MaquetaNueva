@@ -13,6 +13,7 @@
     @include titulo-secciones();
 }
 
+
 /* seccion registro  */
 
 .contenedor__formulario {
@@ -20,31 +21,35 @@
 }
 
 
+
 /* ------ */
 /* seccion perfil de usuario */
 /* -----  */
 
 .seccion__topPerfil{
-    background: linear-gradient(to bottom, $color-secundario, $color-primario); 
-    height: 480px;
+/*     background-image: url("../img/Top-02.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background: linear-gradient(to bottom, $color-secundario, #B1A8A6);
+    height: 450px;
     width: 100%;
 }
 .seccion__perfil {
-    height: 24.5rem;
+    height: auto;
     background: $color-white;
 }
-
 
 .cajaFunciones {
     background-color: $color-primario;
     width: 100%;
-    height: 25rem;
+    height: 23rem;
     margin: 2rem 0rem;
+    border-radius: 1.5rem;
     transition-property: box-shadow, border-radius;
     transition-duration: 0.3s;
      &:hover{
-        box-shadow: inset 0px 0px 25px 5px $color-secundario;
-        border-radius: 1rem;
+        @include hover-caja();
     }
 }
 .cajaImagen__cajaFunciones{
@@ -100,15 +105,15 @@ seccion historial de usuario
 }
 
 .cajaHistorial {
-    background-color: $color-primario;
+    background: linear-gradient(to bottom, #9CCBC7, $color-primario);
     width: 100%;
     height: 15rem;
     margin: 1rem 0rem;
+    border-radius: 1rem;
     transition-property: box-shadow, border-radius;
     transition-duration: 0.4s;
      &:hover{
-        box-shadow: inset 0px 0px 25px 5px $color-secundario;
-        border-radius: 1.5rem;
+        @include hover-caja();
     }
 }
 
@@ -148,7 +153,9 @@ seccion historial de usuario
     margin: 1rem auto;
 }
 
+/* ------- */
 /* Estilos Boton Premium */
+/* --- */
 
 .cajaPremium{
     text-align: center;
@@ -167,7 +174,8 @@ seccion historial de usuario
 .boton__premium{
     font-weight: $medium;
     text-align: center;
-    margin: 0px auto 10px;
+    margin: 0.3rem auto;
+    font-family: $font-f02;
 }
 
 
@@ -175,17 +183,16 @@ seccion historial de usuario
 /* seccion favoritos */
 /* -----  */
 
-
 .cajaFavoritos {
-    background-color: $color-primario;
+    background: linear-gradient(to bottom, $color-secundario, $color-primario);
     width: 100%;
     height: 25rem;
     margin: 2rem 0rem 1rem;
+    border-radius: 1rem;
     transition-property: box-shadow, border-radius;
     transition-duration: 0.4s;
      &:hover{
-        box-shadow: inset 0px 0px 25px 5px $color-secundario;
-        border-radius: 1.5rem;
+        @include hover-caja();
     }
 }
 .cajaImagen__cajaFavoritos{
@@ -197,7 +204,61 @@ seccion historial de usuario
     height: 6rem;
 }
 
+/* ----------
+Inicio seccion crear torneo
+-------- */
 
+.formulario__crear{
+    max-width: 750px;
+    text-align: center;
+    margin: 5rem auto 7rem;
+}
+
+
+.rotulos__formularioCrear{
+    color: $color-primario;
+    font-size: $fs-m;
+    font-weight: $medium;
+    text-align: right;
+    padding: 0px 0px 10px;
+    margin-bottom: 1.5rem;
+}
+
+.campos__formularioCrear{
+    margin-bottom: 1.5rem;
+}
+
+.botonMediano__rellenoPrimario a{
+    text-decoration: none;
+    color: $color-secundario;
+}
+
+/* ----
+inicio Torneo Fixture
+-----  */
+.torneo {
+    background-color: $color-primario;
+}
+
+.caja__tituloTorneo{
+    margin: 3rem auto;
+}
+.tituloTorneo{
+    text-align: center;
+    margin:auto;
+    color: $color-secundario;
+    font-size: $fs-l;
+    font-weight: $medium;
+}
+
+.tituloFase__torneo{
+    text-align: center;
+    margin: auto;
+    color: $color-white;
+    font-size: $fs-lm;
+    font-weight: $medium;
+    font-family: $font-f02;
+}
 
 /* ----
 inicio media queries
@@ -212,21 +273,27 @@ inicio media queries
         height: 200px;
         width: 100%;
     }
-
     .seccion__topPerfil{
         background: linear-gradient(to bottom, $color-secundario, $color-primario);
-        height: 1420px;
+        height: 1320px;
         width: 100%;
     } 
-
     .seccion__titulo{
         padding-top: 7.5rem;
         text-align: center;
         @include titulo-secciones-responsive();
     }
-
     .seccion__perfil {
-        height: 50rem;
+        height: auto;
         background: $color-white;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .rotulos__formularioCrear{
+        margin-bottom: 0rem;
+        text-align: left;
+        padding-left: 1rem;
     }
 }

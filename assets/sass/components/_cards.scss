@@ -1,41 +1,80 @@
 
-/* Modal Registro */
+/* ventanas modales */
 
 .modalBackground {
     background: linear-gradient(to bottom, $color-secundario, $color-primario);
 }
-
 .centerButton {
     padding:auto;
     margin: auto;
     text-align: center;
 }
-
 .centerButton a{
     text-decoration: none;
     color: $color-primario;
-}
-.botonModal {
-    font-size: $fs-s;
-    color: $color-white;
-    padding: 1rem 0rem;
+    font-weight: $medium;
+    font-family: $font-f02;
 }
 
 .tituloModal {
     font-size: $fs-l;
     color: $color-white;
     text-align: center;
-    margin: 10% auto 5%;
+    margin: 5% auto 5%;
+}
+
+
+/* ------- */
+/* Modal Inicio sesión */
+/* ------ */
+
+.botonModal {
+    font-size: $fs-s;
+    color: $color-white;
+    padding: 1rem 0rem;
 }
 
 .modalWidth {
-    max-width: 300px;
+    max-width: 50%;
     margin: auto;
 }
 
 
-
 /* Modal Precios */
+
+.modalPremium{
+    text-align: center;
+    margin: auto;
+}
+
+.caja__modalPremium{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.divisa__modalPremium {
+    text-align: right;
+    font-weight: $medium;
+    font-size: $fs-lm;
+    color: $color-secundario;
+    padding-right: 0.8rem;
+}
+
+.valorD__modalPremium {
+    text-align: left;
+    font-weight: $medium;
+    font-size: $fs-lm;
+    color: $color-white;
+    padding-left: 0.5rem;
+}
+
+.cajaBoton__modalPremium {
+    margin: 1.5rem auto 2.5rem;
+}
+
+
+
+
 
 
 

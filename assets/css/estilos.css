@@ -10059,27 +10059,32 @@ body {
 /* seccion perfil de usuario */
 /* -----  */
 .seccion__topPerfil {
-  background: linear-gradient(to bottom, #7afffa, #e75555);
-  height: 480px;
+  /*     background-image: url("../img/Top-02.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; */
+  background: linear-gradient(to bottom, #7afffa, #B1A8A6);
+  height: 450px;
   width: 100%;
 }
 
 .seccion__perfil {
-  height: 24.5rem;
+  height: auto;
   background: #fff;
 }
 
 .cajaFunciones {
   background-color: #e75555;
   width: 100%;
-  height: 25rem;
+  height: 23rem;
   margin: 2rem 0rem;
+  border-radius: 1.5rem;
   transition-property: box-shadow, border-radius;
   transition-duration: 0.3s;
 }
 .cajaFunciones:hover {
-  box-shadow: inset 0px 0px 25px 5px #7afffa;
-  border-radius: 1rem;
+  box-shadow: inset 0px 0px 35px 10px #7afffa;
+  border-radius: 0.3rem;
 }
 
 .cajaImagen__cajaFunciones {
@@ -10138,16 +10143,17 @@ seccion historial de usuario
 }
 
 .cajaHistorial {
-  background-color: #e75555;
+  background: linear-gradient(to bottom, #9CCBC7, #e75555);
   width: 100%;
   height: 15rem;
   margin: 1rem 0rem;
+  border-radius: 1rem;
   transition-property: box-shadow, border-radius;
   transition-duration: 0.4s;
 }
 .cajaHistorial:hover {
-  box-shadow: inset 0px 0px 25px 5px #7afffa;
-  border-radius: 1.5rem;
+  box-shadow: inset 0px 0px 35px 10px #7afffa;
+  border-radius: 0.3rem;
 }
 
 .caja__tituloHistorial {
@@ -10187,7 +10193,9 @@ seccion historial de usuario
   margin: 1rem auto;
 }
 
+/* ------- */
 /* Estilos Boton Premium */
+/* --- */
 .cajaPremium {
   text-align: center;
   margin: auto;
@@ -10207,23 +10215,25 @@ seccion historial de usuario
 .boton__premium {
   font-weight: 500;
   text-align: center;
-  margin: 0px auto 10px;
+  margin: 0.3rem auto;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ------ */
 /* seccion favoritos */
 /* -----  */
 .cajaFavoritos {
-  background-color: #e75555;
+  background: linear-gradient(to bottom, #7afffa, #e75555);
   width: 100%;
   height: 25rem;
   margin: 2rem 0rem 1rem;
+  border-radius: 1rem;
   transition-property: box-shadow, border-radius;
   transition-duration: 0.4s;
 }
 .cajaFavoritos:hover {
-  box-shadow: inset 0px 0px 25px 5px #7afffa;
-  border-radius: 1.5rem;
+  box-shadow: inset 0px 0px 35px 10px #7afffa;
+  border-radius: 0.3rem;
 }
 
 .cajaImagen__cajaFavoritos {
@@ -10234,6 +10244,61 @@ seccion historial de usuario
 .cajaImagen__cajaFavoritos img {
   width: 6rem;
   height: 6rem;
+}
+
+/* ----------
+Inicio seccion crear torneo
+-------- */
+.formulario__crear {
+  max-width: 750px;
+  text-align: center;
+  margin: 5rem auto 7rem;
+}
+
+.rotulos__formularioCrear {
+  color: #e75555;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: right;
+  padding: 0px 0px 10px;
+  margin-bottom: 1.5rem;
+}
+
+.campos__formularioCrear {
+  margin-bottom: 1.5rem;
+}
+
+.botonMediano__rellenoPrimario a {
+  text-decoration: none;
+  color: #7afffa;
+}
+
+/* ----
+inicio Torneo Fixture
+-----  */
+.torneo {
+  background-color: #e75555;
+}
+
+.caja__tituloTorneo {
+  margin: 3rem auto;
+}
+
+.tituloTorneo {
+  text-align: center;
+  margin: auto;
+  color: #7afffa;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.tituloFase__torneo {
+  text-align: center;
+  margin: auto;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ----
@@ -10251,7 +10316,7 @@ inicio media queries
 
   .seccion__topPerfil {
     background: linear-gradient(to bottom, #7afffa, #e75555);
-    height: 1420px;
+    height: 1320px;
     width: 100%;
   }
 
@@ -10264,14 +10329,22 @@ inicio media queries
   }
 
   .seccion__perfil {
-    height: 50rem;
+    height: auto;
     background: #fff;
+  }
+}
+@media (max-width: 767px) {
+  .rotulos__formularioCrear {
+    margin-bottom: 0rem;
+    text-align: left;
+    padding-left: 1rem;
   }
 }
 /* Botones con borde */
 .boton__simple {
   background: transparent;
   border: 2px transparent;
+  font-family: "Roboto", sans-serif;
 }
 
 .botonUsuario {
@@ -10441,7 +10514,7 @@ inicio media queries
   color: #e75555;
 }
 
-/* Modal Registro */
+/* ventanas modales */
 .modalBackground {
   background: linear-gradient(to bottom, #7afffa, #e75555);
 }
@@ -10455,27 +10528,62 @@ inicio media queries
 .centerButton a {
   text-decoration: none;
   color: #e75555;
-}
-
-.botonModal {
-  font-size: 17px;
-  color: #fff;
-  padding: 1rem 0rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }
 
 .tituloModal {
   font-size: 38px;
   color: #fff;
   text-align: center;
-  margin: 10% auto 5%;
+  margin: 5% auto 5%;
+}
+
+/* ------- */
+/* Modal Inicio sesión */
+/* ------ */
+.botonModal {
+  font-size: 17px;
+  color: #fff;
+  padding: 1rem 0rem;
 }
 
 .modalWidth {
-  max-width: 300px;
+  max-width: 50%;
   margin: auto;
 }
 
 /* Modal Precios */
+.modalPremium {
+  text-align: center;
+  margin: auto;
+}
+
+.caja__modalPremium {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.divisa__modalPremium {
+  text-align: right;
+  font-weight: 500;
+  font-size: 30px;
+  color: #7afffa;
+  padding-right: 0.8rem;
+}
+
+.valorD__modalPremium {
+  text-align: left;
+  font-weight: 500;
+  font-size: 30px;
+  color: #fff;
+  padding-left: 0.5rem;
+}
+
+.cajaBoton__modalPremium {
+  margin: 1.5rem auto 2.5rem;
+}
+
 /* cards del perfil */
 
 /*# sourceMappingURL=estilos.css.map */
